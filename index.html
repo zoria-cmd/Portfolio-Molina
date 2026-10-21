@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Michael Sean F. Molina — IT student and aspiring frontend developer.">
+  <title>Michael Sean F. Molina | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Michael Molina home"><span class="brand-mark">M<span>.</span></span><span>michael.molina</span></a>
+      <button class="menu-toggle" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse"></span> OPEN TO LEARNING & COLLABORATION</div>
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
+        <h1>Michael Sean<br><span class="gradient-text">Molina.</span></h1>
+        <p class="hero-role">IT Student <span class="slash">/</span> Aspiring Frontend Developer</p>
+        <p class="hero-description">I’m learning how to turn ideas into clean, useful, and responsive digital experiences—one line of code at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact">Let’s connect</a>
+        </div>
+        <div class="hero-meta"><span>📍 Bagong Silang, Caloocan City, Philippines</span><span class="meta-divider"></span><span>BSIT · 2nd Year</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="profile-frame">
+          <img src="profile.jpg" alt="Portrait of Michael Sean F. Molina" class="profile-img" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="profile-fallback"><span>MP</span><small>Add profile.jpg</small></div>
+        </div>
+        <div class="floating-tag tag-code"><span class="tag-dot"></span> &lt;creative /&gt;</div>
+        <div class="floating-tag tag-student"><span>✦</span> Always learning</div>
+        <div class="visual-caption"><span class="caption-line"></span><span>BUILDING MY NEXT CHAPTER</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-icon">↓</span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-shell about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious mind.<br><span class="muted-heading">Growing skillset.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-intro panel">
+          <span class="panel-index">01 / INTRO</span>
+          <h3>Learning by<br>making things.</h3>
+          <p>I’m a second-year Bachelor of Science in Information Technology student at Bestlink College of the Philippines. I enjoy exploring web development, experimenting with layouts, and learning how technology can solve everyday problems.</p>
+          <p>My goal is to keep improving and create websites that feel simple to use, look thoughtful, and work across different screen sizes.</p>
+          <div class="signature">Michael Sean F. Molina <span>✍</span></div>
+        </div>
+        <div class="about-details">
+          <article class="detail-card"><div class="detail-icon">⌖</div><div><span class="detail-label">BASED IN</span><h3>Bagong Silang, Caloocan City</h3><p>Philippines</p></div></article>
+          <article class="detail-card"><div class="detail-icon">▤</div><div><span class="detail-label">EDUCATION</span><h3>BS Information Technology</h3><p>2nd Year · Bestlink College of the Philippines</p></div></article>
+          <article class="detail-card"><div class="detail-icon">◎</div><div><span class="detail-label">CURRENT FOCUS</span><h3>Frontend Development</h3><p>Responsive layouts, HTML, CSS, and JavaScript</p></div></article>
+          <div class="quote-card"><span class="quote-mark">“</span><p>Every expert was once a beginner who kept going.</p><span class="quote-note">A REMINDER TO KEEP BUILDING</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell skills-section" id="skills">
+      <div class="section-heading heading-row"><div><p class="eyebrow">TOOLS IN MY TOOLKIT</p><h2>Skills I’m <span class="gradient-text">building.</span></h2></div><p class="heading-note">A work in progress—and proud of it.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol html-symbol">5</span><span class="skill-number">01</span></div><h3>HTML</h3><p>Building semantic page structures and organized content.</p><div class="skill-track"><span style="width:78%"></span></div><small>STRUCTURE & SEMANTICS</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol css-symbol">✳</span><span class="skill-number">02</span></div><h3>CSS</h3><p>Creating layouts, visual styles, and responsive designs.</p><div class="skill-track"><span style="width:70%"></span></div><small>STYLING & LAYOUT</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol js-symbol">JS</span><span class="skill-number">03</span></div><h3>JavaScript</h3><p>Learning to add interaction and behavior to websites.</p><div class="skill-track"><span style="width:45%"></span></div><small>INTERACTIVITY</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol logic-symbol">⌘</span><span class="skill-number">04</span></div><h3>Problem Solving</h3><p>Breaking tasks into smaller steps and thinking logically.</p><div class="skill-track"><span style="width:72%"></span></div><small>LOGIC & TEAMWORK</small></article>
+      </div>
+      <p class="skill-disclaimer">Skill bars are personal progress indicators, not formal test scores.</p>
+    </section>
+
+    <section class="section-shell projects-section" id="projects">
+      <div class="section-heading heading-row"><div><p class="eyebrow">SELECTED CLASS WORK</p><h2>Things I’ve <span class="gradient-text">created.</span></h2></div><span class="project-count">06 PROJECTS <span>↘</span></span></div>
+      <div class="projects-grid">
+        <article class="project-card project-wide"><a href="homepage.html" class="project-image image-home" aria-label="View My Personal Webpage project"><img src="WIN_20260209_08_27_23_Pro.jpg" alt="Personal webpage project preview" onerror="this.style.display='none'"><span class="image-fallback">01</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">WEB DESIGN</span><h3>My Personal Webpage</h3></div><a class="text-link" href="homepage.html">View project ↗</a></div></article>
+        <article class="project-card"><a href="dishes.html" class="project-image image-food" aria-label="View My Dishes project"><img src="sinigang bangus.jpg" alt="Dishes project preview" onerror="this.style.display='none'"><span class="image-fallback">02</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">FOOD & CONTENT</span><h3>My Dishes</h3></div><a class="text-link" href="dishes.html">View ↗</a></div></article>
+        <article class="project-card"><a href="card.html" class="project-image image-student" aria-label="View Card Student project"><img src="Cardstudent.jpeg" alt="Student card project preview" onerror="this.style.display='none'"><span class="image-fallback">03</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">HTML & CSS</span><h3>Student Cards</h3></div><a class="text-link" href="card.html">View ↗</a></div></article>
+        <article class="project-card"><a href="multi.html" class="project-image image-media" aria-label="View Multimedia Page project"><img src="multi.avif" alt="Multimedia project preview" onerror="this.style.display='none'"><span class="image-fallback">04</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">MEDIA</span><h3>Multimedia Page</h3></div><a class="text-link" href="multi.html">View ↗</a></div></article>
+        <article class="project-card"><a href="storybook.html" class="project-image image-story" aria-label="View Storybooks project"><img src="storybook.png" alt="Storybook project preview" onerror="this.style.display='none'"><span class="image-fallback">05</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">STORYTELLING</span><h3>My Storybooks</h3></div><a class="text-link" href="storybook.html">View ↗</a></div></article>
+        <article class="project-card project-wide"><a href="teachers-month.html" class="project-image image-event" aria-label="View Teacher's Month project"><img src="ITE-GROUP-PICS.jpg" alt="Teacher's Month activity preview" onerror="this.style.display='none'"><span class="image-fallback">06</span><span class="project-open">↗</span></a><div class="project-info"><div><span class="project-type">SCHOOL ACTIVITY</span><h3>Teacher’s Month</h3></div><a class="text-link" href="teachers-month.html">View project ↗</a></div></article>
+      </div>
+      <p class="projects-note">Some projects may open only when their HTML files and images are in the same folder.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-shell">
+        <div><p class="eyebrow">HAVE A QUESTION?</p><h2>Let’s make<br><span class="gradient-text">something useful.</span></h2><p class="contact-copy">I’m always glad to learn, share ideas, and connect with fellow students and creators.</p></div>
+        <div class="contact-panel">
+          <a class="contact-row" href="mailto:raisuki09@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL ME</small><strong>raisuki09@gmail.com</strong></span><b>↗</b></a>
+          <div class="contact-row"><span class="contact-icon">☎</span><span><small>CONTACT NUMBER</small><strong>+63 909 036 2682</strong></span></div>
+          <div class="contact-row"><span class="contact-icon">f</span><span><small>FACEBOOK</small><strong>Michael Sean F. Molina</strong></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">M<span>.</span></span><span>michael.molina</span></a><p>Designed while learning. Built with curiosity.</p><button id="back-to-top" class="back-top">BACK TO TOP ↑</button><span class="copyright">© <span id="year"></span> Michael Sean F. Molina · ITE Portfolio</span></footer>
+</body>
+</html>
